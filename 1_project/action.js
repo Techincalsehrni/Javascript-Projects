@@ -27,3 +27,6 @@ buttons.forEach(function (button) {
         }
     })
 })
+
+
+// The forEach method is an excellent choice in this scenario because  are iterating over a list of DOM elements (buttons) and want to apply the same operation—attaching a click event listener—to each of them.
