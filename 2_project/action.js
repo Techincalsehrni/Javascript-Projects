@@ -3,7 +3,7 @@ const form = document.querySelector('form');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const height = parseInt(document.querySelector('#height').value);
+  const height = parseInt(document.querySelector('#height').value);  //parseInt() is a function used to convert a string into an integer
   const weight = parseInt(document.querySelector('#weight').value);
   const results = document.querySelector('#results');
 
@@ -23,3 +23,8 @@ form.addEventListener('submit', function (e) {
     }
   }
 });
+
+
+// console.log(parseInt("42")); // Output: 42
+// console.log(parseInt("42px")); // Output: 42 (stops parsing at non-digit character)
+// console.log(parseInt("abc")); // Output: NaN (no valid number at the start)
